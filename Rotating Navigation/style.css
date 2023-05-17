@@ -17,7 +17,6 @@ body {
     transform-origin: top left;
     transition: transform 0.5s linear;
     width: 100vw;
-    min-height: 100vw;
     padding: 50px;
 }
 
@@ -30,6 +29,7 @@ body {
     position: fixed;
     top: -100px;
     left: -100px;
+    z-index: 100;
 }
 
 .circle {
@@ -39,6 +39,10 @@ body {
     border-radius: 50%;
     position: relative;
     transition: transform 0.5s linear;
+}
+
+.circle-container.show-nav .circle {
+    transform: rotate(-90deg);
 }
 
 .circle button {
